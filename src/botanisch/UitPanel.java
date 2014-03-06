@@ -12,7 +12,7 @@ public class UitPanel extends Panel implements Runnable
   Label uitLabel;
   Hek hek;
 
-  public UitPanel(String nr, /* ... */)
+  public UitPanel(String nr)
   {
     // ...
   
@@ -25,7 +25,11 @@ public class UitPanel extends Panel implements Runnable
     
     // ...
   }
-
+  
+    public void run()
+    {
+        
+    }
   // ...
 
   class Hek extends Canvas

@@ -12,7 +12,7 @@ public class Tuin
   // Attributen
   // ...
 
-  public Tuin( ... )
+  public Tuin()
   {
     // ...
   }

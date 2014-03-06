@@ -37,6 +37,7 @@ public class TuinApplet extends Applet
     label2.setBounds(240,108,156,24);
     add(label2);
     //aantalVrijLabel = new Label(""+tuin.MAX_AANTAL_BEZOEKERS,Label.CENTER);
+    aantalVrijLabel = new Label();
     aantalVrijLabel.setBounds(300,132,36,22);
     add(aantalVrijLabel);
 

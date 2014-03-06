@@ -1,7 +1,6 @@
 // S.Verbeek 23-2-2001
 import java.awt.*;
-import java.awt.event.*;
-import java.applet.*;
+import java.awt.event.ActionListener;
 
 // De InPanel bestaat uit een tekstveld, een reserveerknop,
 // een (verkeers)licht en enkele labels. De klasse Licht
@@ -12,11 +11,12 @@ public class InPanel extends Panel
 {
   // ...
   TextField aantalWachtendenVeld;
+  ActionListener blob;
   Button reserveerKnop;
   Label inLabel ;
   Licht licht;
   
-  public InPanel(String nr, /* ... */)
+  public InPanel(String nr)
   {
     // ...
     Label kassaLabel = new Label("KASSA " + nr);
@@ -28,7 +28,7 @@ public class InPanel extends Panel
     reserveerKnop = new Button();
     reserveerKnop.setLabel("Reserveer");
     reserveerKnop.setBounds(60,36,74,25);
-    reserveerKnop.addActionListener( /* ... */);
+    reserveerKnop.addActionListener(blob);
     add(reserveerKnop);
     inLabel = new Label("IN " + nr);
     inLabel.setBounds(156,0,30,20);

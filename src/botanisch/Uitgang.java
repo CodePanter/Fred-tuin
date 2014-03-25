@@ -2,17 +2,17 @@
 import java.awt.*;
 import java.applet.*;
 
-// De UitPanel klasse bestaat uit een label een (draai)hek.
-// Klasse Hek is innig verbonden met de UitPanel klasse en is
+// De Uitgang klasse bestaat uit een label een (draai)hek.
+// Klasse Hek is innig verbonden met de Uitgang klasse en is
 // daarom als binnenklasse opgenomen.
 
-public class UitPanel extends Panel implements Runnable
+public class Uitgang extends Panel implements Runnable
 {
   // ...
   Label uitLabel;
   Hek hek;
 
-  public UitPanel(String nr)
+  public Uitgang(String nr)
   {
     // ...
   

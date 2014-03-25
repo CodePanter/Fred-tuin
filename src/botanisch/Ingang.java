@@ -2,12 +2,12 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
 
-// De InPanel bestaat uit een tekstveld, een reserveerknop,
+// De Ingang bestaat uit een tekstveld, een reserveerknop,
 // een (verkeers)licht en enkele labels. De klasse Licht
-// hoort bij het InPanel en is daarom als binnenklasse opgenomen.
+// hoort bij het Ingang en is daarom als binnenklasse opgenomen.
 // Aan de reserveerknop is een ActionListener verbonden.
 
-public class InPanel extends Panel
+public class Ingang extends Panel
 {
   // ...
   TextField aantalWachtendenVeld;
@@ -15,8 +15,9 @@ public class InPanel extends Panel
   Button reserveerKnop;
   Label inLabel ;
   Licht licht;
+  public Tuin huidigeTuin = new Tuin();
   
-  public InPanel(String nr)
+  public Ingang(String nr, Tuin tuin)
   {
     // ...
     Label kassaLabel = new Label("KASSA " + nr);
@@ -35,6 +36,7 @@ public class InPanel extends Panel
     add(inLabel);
     licht = new Licht();
     licht.setBounds(156,36,24,24);
+    huidigeTuin = tuin;
     add(licht);
   }
 
@@ -71,8 +73,8 @@ public class InPanel extends Panel
     }
   }
   
-  class ReserveerActionListener /* ... */
+  class ReserveerActionListener
   {
-    // ...
+    
   }
 }

@@ -9,8 +9,8 @@
 
 public class Tuin
 {
-  // Attributen
-  // ...
+  public int MAX_AANTAL_BEZOEKERS = 100;
+  public int bezoekers = 0;
 
   public Tuin()
   {

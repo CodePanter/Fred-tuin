@@ -9,46 +9,46 @@ public class TuinApplet extends Applet
   // ...
   public Label aantalLabel;
   public Label aantalVrijLabel;
+  public Tuin tuin = new Tuin();
   
   public void init()
   {
     setLayout(null);
     setSize(466,191);
-    setBackground(new Color(0,200,0));  //groene tuin
+    //setBackground(new Color(0,200,0));  //groene tuin
 	
-    InPanel in1Panel = new InPanel("1" );
-    in1Panel.setLayout(null);
-    in1Panel.setBounds(24,12,182,60);
-    add(in1Panel);
+    Ingang Ingang1 = new Ingang("1", tuin );
+    Ingang1.setLayout(null);
+    Ingang1.setBounds(24,12,182,60);
+    add(Ingang1);
 
-    InPanel in2Panel = new InPanel("2" );
-    in2Panel.setLayout(null);
-    in2Panel.setBounds(24,96,181,62);
-    add(in2Panel);
+    Ingang Ingang2 = new Ingang("2", tuin );
+    Ingang2.setLayout(null);
+    Ingang2.setBounds(24,96,181,62);
+    add(Ingang2);
 
-    Label label1 = new Label("AANTAL BEZOEKERS:",Label.CENTER);
-    label1.setBounds(240,48,156,24);
-    add(label1);
+    Label Bezoekers = new Label("AANTAL BEZOEKERS:",Label.CENTER);
+    Bezoekers.setBounds(240,48,156,24);
+    add(Bezoekers);
     aantalLabel = new Label("0",Label.CENTER);
     aantalLabel.setBounds(300,72,36,22);
     add(aantalLabel);
 
-    Label label2 = new Label("AANTAL VRIJE PLAATSEN:");
-    label2.setBounds(240,108,156,24);
-    add(label2);
-    //aantalVrijLabel = new Label(""+tuin.MAX_AANTAL_BEZOEKERS,Label.CENTER);
-    aantalVrijLabel = new Label();
+    Label Plaatsen = new Label("AANTAL VRIJE PLAATSEN:");
+    Plaatsen.setBounds(240,108,156,24);
+    add(Plaatsen);
+    aantalVrijLabel = new Label("" + (tuin.MAX_AANTAL_BEZOEKERS - tuin.bezoekers),Label.CENTER);
     aantalVrijLabel.setBounds(300,132,36,22);
     add(aantalVrijLabel);
 
-    UitPanel uit1Panel = new UitPanel("1" );
-    uit1Panel.setLayout(null);
-    uit1Panel.setBounds(408,12,48,64);
-    add(uit1Panel);
+    Uitgang Uitgang1 = new Uitgang("1" );
+    Uitgang1.setLayout(null);
+    Uitgang1.setBounds(408,12,48,64);
+    add(Uitgang1);
 
-    UitPanel uit2Panel = new UitPanel("2" );
-    uit2Panel.setLayout(null);
-    uit2Panel.setBounds(408,96,48,64);
-    add(uit2Panel);
+    Uitgang Uitgang2 = new Uitgang("2" );
+    Uitgang2.setLayout(null);
+    Uitgang2.setBounds(408,96,48,64);
+    add(Uitgang2);
   }
 }

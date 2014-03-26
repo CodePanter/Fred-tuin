@@ -1,4 +1,3 @@
-// S.Verbeek 23-2-2001
 import java.awt.*;
 import java.awt.event.ActionListener;
 
@@ -7,7 +6,7 @@ import java.awt.event.ActionListener;
 // hoort bij het Ingang en is daarom als binnenklasse opgenomen.
 // Aan de reserveerknop is een ActionListener verbonden.
 
-public class Ingang extends Panel
+public class Ingang extends Panel 
 {
   // ...
   TextField aantalWachtendenVeld;
@@ -16,6 +15,7 @@ public class Ingang extends Panel
   Label inLabel ;
   Licht licht;
   public Tuin huidigeTuin = new Tuin();
+  public BusyFlag flag1 = new BusyFlag();
   
   public Ingang(String nr, Tuin tuin)
   {
@@ -40,7 +40,7 @@ public class Ingang extends Panel
     add(licht);
   }
 
-  class Licht extends Canvas
+   class Licht extends Canvas 
   {
     private Color kleur = Color.red;
   
@@ -63,7 +63,12 @@ public class Ingang extends Panel
     
     public void groenPuls()  //Zet licht gedurende 3s op groen.
     {
-      // ...
+      kleur = Color.green;
+      repaint();
+      flag1.tryGetBusyFlag();
+      flag1.getBusyFlag();
+      kleur = Color.red;
+      repaint();
     }
 
     public void paint(Graphics g)

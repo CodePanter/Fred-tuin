@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Arjen/Documents/GitHub/Fred-tuin/src/botanisch/TuinApplet.html</file>
             <file>file:/C:/Users/Arjen/Documents/GitHub/Fred-tuin/src/botanisch/TuinApplet.java</file>
-            <file>file:/C:/Users/Arjen/Documents/GitHub/Fred-tuin/src/botanisch/UitPanel.java</file>
+            <file>file:/C:/Users/Arjen/Documents/GitHub/Fred-tuin/src/botanisch/BusyFlag.java</file>
+            <file>file:/C:/Users/Arjen/Documents/GitHub/Fred-tuin/src/botanisch/Uitgang.java</file>
+            <file>file:/C:/Users/Arjen/Documents/GitHub/Fred-tuin/src/botanisch/Ingang.java</file>
             <file>file:/C:/Users/Arjen/Documents/GitHub/Fred-tuin/src/botanisch/Tuin.java</file>
         </group>
     </open-files>

@@ -55,7 +55,7 @@ public class Uitgang extends Panel implements Runnable
     
     public void openPuls()  //Zet het hekje gedurende 1 s open.
     {
-      // ...
+        
     }
     
     public void paint(Graphics g)

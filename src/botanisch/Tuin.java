@@ -14,9 +14,6 @@ public class Tuin
 
   public Tuin()
   {
-    // ...
+   
   }
-  
-  // Methoden (zie klassediagram in lesmateriaal)
-  // ...
 }

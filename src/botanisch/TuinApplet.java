@@ -30,14 +30,14 @@ public class TuinApplet extends Applet
     Label Bezoekers = new Label("AANTAL BEZOEKERS:",Label.CENTER);
     Bezoekers.setBounds(240,48,156,24);
     add(Bezoekers);
-    aantalLabel = new Label("0",Label.CENTER);
+    aantalLabel = new Label("" + tuin.getAantalBezoekers(),Label.CENTER);
     aantalLabel.setBounds(300,72,36,22);
     add(aantalLabel);
 
     Label Plaatsen = new Label("AANTAL VRIJE PLAATSEN:");
     Plaatsen.setBounds(240,108,156,24);
     add(Plaatsen);
-    aantalVrijLabel = new Label("" + (tuin.MAX_AANTAL_BEZOEKERS - tuin.aantalBezoekers),Label.CENTER);
+    aantalVrijLabel = new Label("" + tuin.getAantalVrijePlaatsen(),Label.CENTER);
     aantalVrijLabel.setBounds(300,132,36,22);
     add(aantalVrijLabel);
 

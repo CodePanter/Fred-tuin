@@ -77,9 +77,4 @@ public class Ingang extends Panel
       g.fillOval(0,0,24,24);
     }
   }
-  
-  class ReserveerActionListener
-  {
-    
-  }
 }

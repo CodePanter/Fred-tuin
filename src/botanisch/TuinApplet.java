@@ -7,9 +7,9 @@ import java.applet.*;
 public class TuinApplet extends Applet
 {
   // ...
-  public Label aantalLabel;
-  public Label aantalVrijLabel;
-  public Tuin tuin = new Tuin();
+  private Label aantalLabel;
+  private Label aantalVrijLabel;
+  private Tuin tuin = new Tuin();
   
   public void init()
   {

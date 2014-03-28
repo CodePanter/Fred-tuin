@@ -11,7 +11,7 @@ public class Tuin
 {
   private final int MAX_AANTAL_BEZOEKERS = 100;
   private int aantalBezoekers = 0;
-  private BusyFlag reserveerflag;
+  private static BusyFlag reserveerFlag;
 
   public Tuin()
   {
@@ -40,12 +40,12 @@ public class Tuin
       
   }
   
-  public void reserveerLock(){
-      
+  public static void reserveerLock(){
+      reserveerFlag.getBusyFlag();
   }
   
-  public void reserveerUnlock(){
-      
+  public static void reserveerUnlock(){
+      reserveerFlag.freeBusyFlag();
   }
   
   public Thread getReserveerFlagOwner(){
